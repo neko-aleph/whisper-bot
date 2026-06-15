@@ -48,5 +48,5 @@ poetry run python -m whisper_bot.run
 
 ```shell
 docker build -t whisper-bot .
-docker run --env-file .env whisper-bot
+docker docker run -d --restart=unless-stopped --env-file .env whisper-bot
 ```
