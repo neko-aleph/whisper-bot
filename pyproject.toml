@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "whisper-bot"
+version = "0.1.0"
+description = ""
+authors = ["Pavel"]
+packages = [{include = "whisper_bot", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+aiogram = "^3.22.0"
+python-decouple = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.15.17"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
