@@ -2,8 +2,6 @@
 
 Telegram bot that transcribes voice messages using OpenAI Whisper Large v3 Turbo via HuggingFace Inference API.
 
----
-
 ## 💬 How it works
 
 👉 [Try it on Telegram](https://t.me/neko_whisper_bot)
@@ -11,8 +9,6 @@ Telegram bot that transcribes voice messages using OpenAI Whisper Large v3 Turbo
 Just send a voice, audio or video note and the bot replies with text.
 
 ![Example](assets/example.png)
-
----
 
 ## 📦 Setup
 
