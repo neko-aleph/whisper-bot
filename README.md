@@ -16,6 +16,11 @@ Just send a voice, audio or video note and the bot replies with text.
 
 ## 📦 Setup
 
+### Requirements
+
+- Python 3.13+
+- Poetry installed (https://python-poetry.org/)
+
 ### 1. Clone
 
 ```shell
@@ -34,7 +39,10 @@ poetry install
 Create `.env` file:
 
 ```dotenv
+# Telegram Bot Token (from @BotFather)
 BOT_TOKEN=your_telegram_bot_token
+
+# HuggingFace API token (https://huggingface.co/settings/tokens)
 HF_TOKEN=your_huggingface_token
 ```
 
@@ -48,5 +56,5 @@ poetry run python -m whisper_bot.run
 
 ```shell
 docker build -t whisper-bot .
-docker docker run -d --restart=unless-stopped --env-file .env whisper-bot
+docker run -d --restart=unless-stopped --env-file .env whisper-bot
 ```
